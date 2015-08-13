@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41F169161B6A05BC0042C0CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F169151B6A05BC0042C0CB /* main.m */; };
+		41F169191B6A05BC0042C0CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F169181B6A05BC0042C0CB /* AppDelegate.m */; };
+		41F1691C1B6A05BC0042C0CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F1691B1B6A05BC0042C0CB /* ViewController.m */; };
+		41F1691F1B6A05BC0042C0CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F1691D1B6A05BC0042C0CB /* Main.storyboard */; };
+		41F169211B6A05BC0042C0CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F169201B6A05BC0042C0CB /* Images.xcassets */; };
+		41F169241B6A05BC0042C0CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41F169221B6A05BC0042C0CB /* LaunchScreen.xib */; };
+		41F169301B6A05BC0042C0CB /* SCAvatarBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F1692F1B6A05BC0042C0CB /* SCAvatarBrowserTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41F1692A1B6A05BC0042C0CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41F169081B6A05BC0042C0CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41F1690F1B6A05BC0042C0CB;
+			remoteInfo = SCAvatarBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41F169101B6A05BC0042C0CB /* SCAvatarBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCAvatarBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F169141B6A05BC0042C0CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F169151B6A05BC0042C0CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		41F169171B6A05BC0042C0CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		41F169181B6A05BC0042C0CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		41F1691A1B6A05BC0042C0CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		41F1691B1B6A05BC0042C0CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		41F1691E1B6A05BC0042C0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41F169201B6A05BC0042C0CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		41F169231B6A05BC0042C0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		41F169291B6A05BC0042C0CB /* SCAvatarBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCAvatarBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F1692E1B6A05BC0042C0CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F1692F1B6A05BC0042C0CB /* SCAvatarBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAvatarBrowserTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41F1690D1B6A05BC0042C0CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41F169261B6A05BC0042C0CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41F169071B6A05BC0042C0CB = {
+			isa = PBXGroup;
+			children = (
+				41F169121B6A05BC0042C0CB /* SCAvatarBrowser */,
+				41F1692C1B6A05BC0042C0CB /* SCAvatarBrowserTests */,
+				41F169111B6A05BC0042C0CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41F169111B6A05BC0042C0CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41F169101B6A05BC0042C0CB /* SCAvatarBrowser.app */,
+				41F169291B6A05BC0042C0CB /* SCAvatarBrowserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41F169121B6A05BC0042C0CB /* SCAvatarBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				41F169171B6A05BC0042C0CB /* AppDelegate.h */,
+				41F169181B6A05BC0042C0CB /* AppDelegate.m */,
+				41F1691A1B6A05BC0042C0CB /* ViewController.h */,
+				41F1691B1B6A05BC0042C0CB /* ViewController.m */,
+				41F1691D1B6A05BC0042C0CB /* Main.storyboard */,
+				41F169201B6A05BC0042C0CB /* Images.xcassets */,
+				41F169221B6A05BC0042C0CB /* LaunchScreen.xib */,
+				41F169131B6A05BC0042C0CB /* Supporting Files */,
+			);
+			path = SCAvatarBrowser;
+			sourceTree = "<group>";
+		};
+		41F169131B6A05BC0042C0CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41F169141B6A05BC0042C0CB /* Info.plist */,
+				41F169151B6A05BC0042C0CB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41F1692C1B6A05BC0042C0CB /* SCAvatarBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				41F1692F1B6A05BC0042C0CB /* SCAvatarBrowserTests.m */,
+				41F1692D1B6A05BC0042C0CB /* Supporting Files */,
+			);
+			path = SCAvatarBrowserTests;
+			sourceTree = "<group>";
+		};
+		41F1692D1B6A05BC0042C0CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41F1692E1B6A05BC0042C0CB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41F1690F1B6A05BC0042C0CB /* SCAvatarBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41F169331B6A05BC0042C0CB /* Build configuration list for PBXNativeTarget "SCAvatarBrowser" */;
+			buildPhases = (
+				41F1690C1B6A05BC0042C0CB /* Sources */,
+				41F1690D1B6A05BC0042C0CB /* Frameworks */,
+				41F1690E1B6A05BC0042C0CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCAvatarBrowser;
+			productName = SCAvatarBrowser;
+			productReference = 41F169101B6A05BC0042C0CB /* SCAvatarBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41F169281B6A05BC0042C0CB /* SCAvatarBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41F169361B6A05BC0042C0CB /* Build configuration list for PBXNativeTarget "SCAvatarBrowserTests" */;
+			buildPhases = (
+				41F169251B6A05BC0042C0CB /* Sources */,
+				41F169261B6A05BC0042C0CB /* Frameworks */,
+				41F169271B6A05BC0042C0CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41F1692B1B6A05BC0042C0CB /* PBXTargetDependency */,
+			);
+			name = SCAvatarBrowserTests;
+			productName = SCAvatarBrowserTests;
+			productReference = 41F169291B6A05BC0042C0CB /* SCAvatarBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41F169081B6A05BC0042C0CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "罗思成";
+				TargetAttributes = {
+					41F1690F1B6A05BC0042C0CB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					41F169281B6A05BC0042C0CB = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 41F1690F1B6A05BC0042C0CB;
+					};
+				};
+			};
+			buildConfigurationList = 41F1690B1B6A05BC0042C0CB /* Build configuration list for PBXProject "SCAvatarBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41F169071B6A05BC0042C0CB;
+			productRefGroup = 41F169111B6A05BC0042C0CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41F1690F1B6A05BC0042C0CB /* SCAvatarBrowser */,
+				41F169281B6A05BC0042C0CB /* SCAvatarBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41F1690E1B6A05BC0042C0CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F1691F1B6A05BC0042C0CB /* Main.storyboard in Resources */,
+				41F169241B6A05BC0042C0CB /* LaunchScreen.xib in Resources */,
+				41F169211B6A05BC0042C0CB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41F169271B6A05BC0042C0CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41F1690C1B6A05BC0042C0CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F1691C1B6A05BC0042C0CB /* ViewController.m in Sources */,
+				41F169191B6A05BC0042C0CB /* AppDelegate.m in Sources */,
+				41F169161B6A05BC0042C0CB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41F169251B6A05BC0042C0CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F169301B6A05BC0042C0CB /* SCAvatarBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41F1692B1B6A05BC0042C0CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41F1690F1B6A05BC0042C0CB /* SCAvatarBrowser */;
+			targetProxy = 41F1692A1B6A05BC0042C0CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41F1691D1B6A05BC0042C0CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41F1691E1B6A05BC0042C0CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41F169221B6A05BC0042C0CB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41F169231B6A05BC0042C0CB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41F169311B6A05BC0042C0CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		41F169321B6A05BC0042C0CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41F169341B6A05BC0042C0CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SCAvatarBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		41F169351B6A05BC0042C0CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SCAvatarBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		41F169371B6A05BC0042C0CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SCAvatarBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCAvatarBrowser.app/SCAvatarBrowser";
+			};
+			name = Debug;
+		};
+		41F169381B6A05BC0042C0CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SCAvatarBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCAvatarBrowser.app/SCAvatarBrowser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41F1690B1B6A05BC0042C0CB /* Build configuration list for PBXProject "SCAvatarBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41F169311B6A05BC0042C0CB /* Debug */,
+				41F169321B6A05BC0042C0CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41F169331B6A05BC0042C0CB /* Build configuration list for PBXNativeTarget "SCAvatarBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41F169341B6A05BC0042C0CB /* Debug */,
+				41F169351B6A05BC0042C0CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		41F169361B6A05BC0042C0CB /* Build configuration list for PBXNativeTarget "SCAvatarBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41F169371B6A05BC0042C0CB /* Debug */,
+				41F169381B6A05BC0042C0CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41F169081B6A05BC0042C0CB /* Project object */;
+}
