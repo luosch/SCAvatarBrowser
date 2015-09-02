@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		415E78AF1B9745C70043102A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 415E78AE1B9745C70043102A /* main.m */; };
+		415E78B21B9745C70043102A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 415E78B11B9745C70043102A /* AppDelegate.m */; };
+		415E78B51B9745C70043102A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415E78B41B9745C70043102A /* ViewController.m */; };
+		415E78B81B9745C70043102A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415E78B61B9745C70043102A /* Main.storyboard */; };
+		415E78BA1B9745C70043102A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415E78B91B9745C70043102A /* Images.xcassets */; };
+		415E78BD1B9745C70043102A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 415E78BB1B9745C70043102A /* LaunchScreen.xib */; };
+		415E78C91B9745C80043102A /* SCAvatarBrowserDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 415E78C81B9745C80043102A /* SCAvatarBrowserDemoTests.m */; };
+		415E78D41B9748850043102A /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 415E78D31B9748850043102A /* cat.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		415E78C31B9745C80043102A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 415E78A11B9745C70043102A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415E78A81B9745C70043102A;
+			remoteInfo = SCAvatarBrowserDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		415E78A91B9745C70043102A /* SCAvatarBrowserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCAvatarBrowserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		415E78AD1B9745C70043102A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415E78AE1B9745C70043102A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		415E78B01B9745C70043102A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		415E78B11B9745C70043102A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		415E78B31B9745C70043102A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		415E78B41B9745C70043102A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		415E78B71B9745C70043102A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		415E78B91B9745C70043102A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		415E78BC1B9745C70043102A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		415E78C21B9745C80043102A /* SCAvatarBrowserDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCAvatarBrowserDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		415E78C71B9745C80043102A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415E78C81B9745C80043102A /* SCAvatarBrowserDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAvatarBrowserDemoTests.m; sourceTree = "<group>"; };
+		415E78D31B9748850043102A /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cat.jpg; path = SCAvatarBrowserDemo/cat.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		415E78A61B9745C70043102A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415E78BF1B9745C80043102A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		415E78A01B9745C70043102A = {
+			isa = PBXGroup;
+			children = (
+				415E78AB1B9745C70043102A /* SCAvatarBrowserDemo */,
+				415E78C51B9745C80043102A /* SCAvatarBrowserDemoTests */,
+				415E78AA1B9745C70043102A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		415E78AA1B9745C70043102A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				415E78A91B9745C70043102A /* SCAvatarBrowserDemo.app */,
+				415E78C21B9745C80043102A /* SCAvatarBrowserDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		415E78AB1B9745C70043102A /* SCAvatarBrowserDemo */ = {
+			isa = PBXGroup;
+			children = (
+				415E78D51B9748A70043102A /* Classes */,
+				415E78D21B97485C0043102A /* Asset */,
+				415E78B01B9745C70043102A /* AppDelegate.h */,
+				415E78B11B9745C70043102A /* AppDelegate.m */,
+				415E78B31B9745C70043102A /* ViewController.h */,
+				415E78B41B9745C70043102A /* ViewController.m */,
+				415E78B61B9745C70043102A /* Main.storyboard */,
+				415E78B91B9745C70043102A /* Images.xcassets */,
+				415E78BB1B9745C70043102A /* LaunchScreen.xib */,
+				415E78AC1B9745C70043102A /* Supporting Files */,
+			);
+			path = SCAvatarBrowserDemo;
+			sourceTree = "<group>";
+		};
+		415E78AC1B9745C70043102A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				415E78AD1B9745C70043102A /* Info.plist */,
+				415E78AE1B9745C70043102A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		415E78C51B9745C80043102A /* SCAvatarBrowserDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				415E78C81B9745C80043102A /* SCAvatarBrowserDemoTests.m */,
+				415E78C61B9745C80043102A /* Supporting Files */,
+			);
+			path = SCAvatarBrowserDemoTests;
+			sourceTree = "<group>";
+		};
+		415E78C61B9745C80043102A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				415E78C71B9745C80043102A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		415E78D21B97485C0043102A /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				415E78D31B9748850043102A /* cat.jpg */,
+			);
+			name = Asset;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		415E78D51B9748A70043102A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		415E78A81B9745C70043102A /* SCAvatarBrowserDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415E78CC1B9745C80043102A /* Build configuration list for PBXNativeTarget "SCAvatarBrowserDemo" */;
+			buildPhases = (
+				415E78A51B9745C70043102A /* Sources */,
+				415E78A61B9745C70043102A /* Frameworks */,
+				415E78A71B9745C70043102A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCAvatarBrowserDemo;
+			productName = SCAvatarBrowserDemo;
+			productReference = 415E78A91B9745C70043102A /* SCAvatarBrowserDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		415E78C11B9745C80043102A /* SCAvatarBrowserDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415E78CF1B9745C80043102A /* Build configuration list for PBXNativeTarget "SCAvatarBrowserDemoTests" */;
+			buildPhases = (
+				415E78BE1B9745C80043102A /* Sources */,
+				415E78BF1B9745C80043102A /* Frameworks */,
+				415E78C01B9745C80043102A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				415E78C41B9745C80043102A /* PBXTargetDependency */,
+			);
+			name = SCAvatarBrowserDemoTests;
+			productName = SCAvatarBrowserDemoTests;
+			productReference = 415E78C21B9745C80043102A /* SCAvatarBrowserDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		415E78A11B9745C70043102A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "罗思成";
+				TargetAttributes = {
+					415E78A81B9745C70043102A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					415E78C11B9745C80043102A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 415E78A81B9745C70043102A;
+					};
+				};
+			};
+			buildConfigurationList = 415E78A41B9745C70043102A /* Build configuration list for PBXProject "SCAvatarBrowserDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 415E78A01B9745C70043102A;
+			productRefGroup = 415E78AA1B9745C70043102A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				415E78A81B9745C70043102A /* SCAvatarBrowserDemo */,
+				415E78C11B9745C80043102A /* SCAvatarBrowserDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		415E78A71B9745C70043102A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415E78B81B9745C70043102A /* Main.storyboard in Resources */,
+				415E78BD1B9745C70043102A /* LaunchScreen.xib in Resources */,
+				415E78D41B9748850043102A /* cat.jpg in Resources */,
+				415E78BA1B9745C70043102A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415E78C01B9745C80043102A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		415E78A51B9745C70043102A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415E78B51B9745C70043102A /* ViewController.m in Sources */,
+				415E78B21B9745C70043102A /* AppDelegate.m in Sources */,
+				415E78AF1B9745C70043102A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415E78BE1B9745C80043102A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415E78C91B9745C80043102A /* SCAvatarBrowserDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		415E78C41B9745C80043102A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415E78A81B9745C70043102A /* SCAvatarBrowserDemo */;
+			targetProxy = 415E78C31B9745C80043102A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		415E78B61B9745C70043102A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				415E78B71B9745C70043102A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		415E78BB1B9745C70043102A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				415E78BC1B9745C70043102A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		415E78CA1B9745C80043102A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		415E78CB1B9745C80043102A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		415E78CD1B9745C80043102A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SCAvatarBrowserDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		415E78CE1B9745C80043102A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SCAvatarBrowserDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		415E78D01B9745C80043102A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SCAvatarBrowserDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCAvatarBrowserDemo.app/SCAvatarBrowserDemo";
+			};
+			name = Debug;
+		};
+		415E78D11B9745C80043102A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SCAvatarBrowserDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCAvatarBrowserDemo.app/SCAvatarBrowserDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		415E78A41B9745C70043102A /* Build configuration list for PBXProject "SCAvatarBrowserDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415E78CA1B9745C80043102A /* Debug */,
+				415E78CB1B9745C80043102A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415E78CC1B9745C80043102A /* Build configuration list for PBXNativeTarget "SCAvatarBrowserDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415E78CD1B9745C80043102A /* Debug */,
+				415E78CE1B9745C80043102A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		415E78CF1B9745C80043102A /* Build configuration list for PBXNativeTarget "SCAvatarBrowserDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415E78D01B9745C80043102A /* Debug */,
+				415E78D11B9745C80043102A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 415E78A11B9745C70043102A /* Project object */;
+}
