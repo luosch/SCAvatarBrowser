@@ -10,4 +10,6 @@
 
 @interface SCAvatarBrowser : UIViewController
 
++ (void)showImageView:(UIImageView *)avatarImageView;
+
 @end

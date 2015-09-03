@@ -8,30 +8,68 @@
 
 #import "SCAvatarBrowser.h"
 
-@interface SCAvatarBrowser ()
-
-@end
+static CGRect avatarFrame;
+static UIImageView *newAvatarImageView;
 
 @implementation SCAvatarBrowser
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
++ (void)showImageView:(UIImageView *)avatarImageView {
+    if (avatarImageView == nil) {
+        NSLog(@"avatarImageView is nil");
+        return;
+    }
+    
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    
+    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    UIImage *avatarImage = [avatarImageView image];
+    
+    // black background contains the avatar image
+    UIView *background = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight)];
+    [background setBackgroundColor:[UIColor blackColor]];
+    [background setAlpha:0];
+
+    // same size of original image
+    avatarFrame = [avatarImageView convertRect:avatarImageView.bounds toView:keyWindow];
+    newAvatarImageView = [[UIImageView alloc] initWithFrame:avatarFrame];
+    [newAvatarImageView setImage:avatarImage];
+    [newAvatarImageView setUserInteractionEnabled:YES];
+    [background addSubview:newAvatarImageView];
+    [keyWindow addSubview:background];
+    
+    // make it show on middle
+    CGFloat proportion = screenWidth / avatarImage.size.width;
+    CGFloat top = screenHeight / 2 - avatarImage.size.height * proportion / 2;
+    CGFloat height = avatarImage.size.height * proportion;
+    
+    // return to origin view by tap on background
+    UITapGestureRecognizer *tapOnBackground = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(actionTapOnImage:)];
+    [background addGestureRecognizer:tapOnBackground];
+    
+    // show detail view with animation
+    [UIView animateWithDuration:0.3f
+                     animations:^
+    {
+        [newAvatarImageView setFrame:CGRectMake(0, top, screenWidth, height)];
+        [background setAlpha:1];
+    }];
+}
+
++ (void)actionTapOnImage:(UITapGestureRecognizer *)sender {
+    UIView *background = [sender view];
+    [UIView animateWithDuration:0.3f animations:^ {
+        [newAvatarImageView setFrame:avatarFrame];
+        [background setAlpha:0];
+    } completion:^(BOOL finished) {
+        [background removeFromSuperview];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
