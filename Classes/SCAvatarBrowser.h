@@ -2,12 +2,12 @@
 //  SCAvatarBrowser.h
 //  SCAvatarBrowserDemo
 //
-//  Created by 罗思成 on 15/9/2.
+//  Created by 罗思成 on 15/9/3.
 //  Copyright (c) 2015年 罗思成. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface SCAvatarBrowser : NSObject
+@interface SCAvatarBrowser : UIViewController
 
 @end
