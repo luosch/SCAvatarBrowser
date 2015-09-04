@@ -10,6 +10,9 @@
 
 static CGRect avatarFrame;
 static UIImageView *newAvatarImageView;
+static CGFloat currentScale;
+static CGFloat screenWidth;
+static CGFloat screenHeight;
 
 @implementation SCAvatarBrowser
 
@@ -19,8 +22,8 @@ static UIImageView *newAvatarImageView;
         return;
     }
     
-    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    screenWidth = [UIScreen mainScreen].bounds.size.width;
+    screenHeight = [UIScreen mainScreen].bounds.size.height;
     
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
     UIImage *avatarImage = [avatarImageView image];
@@ -47,6 +50,10 @@ static UIImageView *newAvatarImageView;
     UITapGestureRecognizer *tapOnBackground = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(actionTapOnImage:)];
     [background addGestureRecognizer:tapOnBackground];
     
+    // scale up or down by pinch on background
+    UIPinchGestureRecognizer *pinchOnImage = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(actionPinchOnImage:)];
+    [background addGestureRecognizer:pinchOnImage];
+    
     // show detail view with animation
     [UIView animateWithDuration:0.3f
                      animations:^
@@ -63,8 +70,20 @@ static UIImageView *newAvatarImageView;
         [background setAlpha:0];
     } completion:^(BOOL finished) {
         [background removeFromSuperview];
+        newAvatarImageView = nil;
     }];
-    
+}
+
++ (void)actionPinchOnImage:(UIPinchGestureRecognizer *)sender {
+    if ([sender state] == UIGestureRecognizerStateEnded) {
+        if (newAvatarImageView.frame.size.width < screenWidth) {
+            [UIView animateWithDuration:0.5f
+                             animations:^
+            {
+                [newAvatarImageView setCenter:CGPointMake(screenWidth / 2, screenHeight / 2)];
+            }];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {
