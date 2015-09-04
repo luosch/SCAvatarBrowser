@@ -15,6 +15,7 @@
 		415E78BD1B9745C70043102A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 415E78BB1B9745C70043102A /* LaunchScreen.xib */; };
 		415E78C91B9745C80043102A /* SCAvatarBrowserDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 415E78C81B9745C80043102A /* SCAvatarBrowserDemoTests.m */; };
 		415E78D41B9748850043102A /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 415E78D31B9748850043102A /* cat.jpg */; };
+		41F307B51B9891D100F96CC4 /* SCAvatarBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F307B41B9891D100F96CC4 /* SCAvatarBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		415E78C71B9745C80043102A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		415E78C81B9745C80043102A /* SCAvatarBrowserDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAvatarBrowserDemoTests.m; sourceTree = "<group>"; };
 		415E78D31B9748850043102A /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cat.jpg; path = SCAvatarBrowserDemo/cat.jpg; sourceTree = "<group>"; };
+		41F307B31B9891D100F96CC4 /* SCAvatarBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCAvatarBrowser.h; path = ../../Classes/SCAvatarBrowser.h; sourceTree = "<group>"; };
+		41F307B41B9891D100F96CC4 /* SCAvatarBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCAvatarBrowser.m; path = ../../Classes/SCAvatarBrowser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +86,7 @@
 		415E78AB1B9745C70043102A /* SCAvatarBrowserDemo */ = {
 			isa = PBXGroup;
 			children = (
-				415E78D51B9748A70043102A /* Classes */,
+				415E78DB1B974E730043102A /* SCAvatarBrowser */,
 				415E78D21B97485C0043102A /* Asset */,
 				415E78B01B9745C70043102A /* AppDelegate.h */,
 				415E78B11B9745C70043102A /* AppDelegate.m */,
@@ -132,11 +135,13 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		415E78D51B9748A70043102A /* Classes */ = {
+		415E78DB1B974E730043102A /* SCAvatarBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				41F307B31B9891D100F96CC4 /* SCAvatarBrowser.h */,
+				41F307B41B9891D100F96CC4 /* SCAvatarBrowser.m */,
 			);
-			path = Classes;
+			name = SCAvatarBrowser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				415E78B51B9745C70043102A /* ViewController.m in Sources */,
+				41F307B51B9891D100F96CC4 /* SCAvatarBrowser.m in Sources */,
 				415E78B21B9745C70043102A /* AppDelegate.m in Sources */,
 				415E78AF1B9745C70043102A /* main.m in Sources */,
 			);
@@ -439,6 +445,7 @@
 				415E78CE1B9745C80043102A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		415E78CF1B9745C80043102A /* Build configuration list for PBXNativeTarget "SCAvatarBrowserDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +454,7 @@
 				415E78D11B9745C80043102A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

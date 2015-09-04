@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SCAvatarBrowser.h"
 
 @interface ViewController ()
 
@@ -23,24 +24,24 @@
     CGFloat avatarHeight = 80.0f;
     
     // put a circle image on middle view
-    UIImageView *avatar = [[UIImageView alloc] initWithFrame:CGRectMake(screenWidth / 2 - avatarWidth / 2, screenHeight / 2 - avatarHeight / 2 - 40, avatarWidth, avatarHeight)];
-    [avatar setImage:[UIImage imageNamed:@"cat.jpg"]];
-    [avatar setUserInteractionEnabled:YES];
-    [self.view addSubview:avatar];
+    self.avatar = [[UIImageView alloc] initWithFrame:CGRectMake(screenWidth / 2 - avatarWidth / 2, screenHeight / 2 - avatarHeight / 2 - 40, avatarWidth, avatarHeight)];
+    [self.avatar setImage:[UIImage imageNamed:@"cat.jpg"]];
+    [self.avatar setUserInteractionEnabled:YES];
+    [self.view addSubview:self.avatar];
     
     // to be circle
-    [avatar.layer setCornerRadius:avatarWidth / 2];
-    [avatar.layer setBorderColor:[UIColor whiteColor].CGColor];
-    [avatar.layer setBorderWidth:1.0f];
-    [avatar setClipsToBounds:YES];
+    [self.avatar.layer setCornerRadius:avatarWidth / 2];
+    [self.avatar.layer setBorderColor:[UIColor whiteColor].CGColor];
+    [self.avatar.layer setBorderWidth:1.0f];
+    [self.avatar setClipsToBounds:YES];
     
     // create tap event for image
     UITapGestureRecognizer *tapOnImage = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(actionTapOnImage)];
-    [avatar addGestureRecognizer:tapOnImage];
+    [self.avatar addGestureRecognizer:tapOnImage];
 }
 
 - (void)actionTapOnImage {
-    NSLog(@"actionTapOnImage");
+    [SCAvatarBrowser showImageView:self.avatar];
 }
 
 - (void)didReceiveMemoryWarning {
