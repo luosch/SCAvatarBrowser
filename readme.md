@@ -26,7 +26,7 @@ The project uses ARC and targets iOS 7.0+.
 
 ## TODO
 
-- ~~ Create one example ~~ (added 2015/09/04)
+- ~~Create one example~~ (added 2015/09/04)
 - Support for drag and sacle
 - Support for store image to local photo library
 - Add CocoaPods spec
