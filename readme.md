@@ -16,12 +16,18 @@ The project uses ARC and targets iOS 7.0+.
 
 ## Usage Examples
 
-    [SCAvatarBrowser showImage:[UIImage imageNamed:@"myAvatar.jpg"] fromView:self.view];
+	#import "SCAvatarBrowser.h"
+	...
+	...
+	...
+	- (void)showAvatarDetalView {
+	    [SCAvatarBrowser showImageView:self.avatar];
+	}
 
 ## TODO
 
-- Create one example
-- Support for drag and sacle smoothly
+- ~~Create one example~~
+- Support for drag and sacle
 - Support for store image to local photo library
 - Add CocoaPods spec
 
