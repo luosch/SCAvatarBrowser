@@ -63,6 +63,7 @@ static CGFloat screenHeight;
     }];
 }
 
+// tap to return to original view
 + (void)actionTapOnImage:(UITapGestureRecognizer *)sender {
     UIView *background = [sender view];
     [UIView animateWithDuration:0.3f animations:^ {
@@ -77,12 +78,45 @@ static CGFloat screenHeight;
 + (void)actionPinchOnImage:(UIPinchGestureRecognizer *)sender {
     if ([sender state] == UIGestureRecognizerStateEnded) {
         if (newAvatarImageView.frame.size.width < screenWidth) {
+            // avatar image too small
             [UIView animateWithDuration:0.5f
                              animations:^
             {
                 [newAvatarImageView setCenter:CGPointMake(screenWidth / 2, screenHeight / 2)];
+                CGFloat proportion = screenWidth / newAvatarImageView.bounds.size.width;
+                CGAffineTransform currentTransform = newAvatarImageView.transform;
+                CGAffineTransform newTransform = CGAffineTransformScale(currentTransform, proportion, proportion);
+                [newAvatarImageView setTransform:newTransform];
+            }];
+        } else if (newAvatarImageView.bounds.size.width > 2 * screenWidth) {
+            // avatar image too big
+            [UIView animateWithDuration:0.5f
+                             animations:^
+            {
+                CGFloat proportion = 2 * screenWidth / newAvatarImageView.bounds.size.width;
+                CGAffineTransform currentTransform = newAvatarImageView.transform;
+                CGAffineTransform newTransform = CGAffineTransformScale(currentTransform, proportion, proportion);
+                [newAvatarImageView setTransform:newTransform];
             }];
         }
+        currentScale = 1.0f;
+        return;
+    } else {
+        CGFloat proportion = 1.0 - (currentScale - [sender scale]);
+        
+        // slow down when being too big or too small
+        if (newAvatarImageView.bounds.size.width > 2 * screenWidth) {
+            proportion = 1.01f;
+        } else if (newAvatarImageView.bounds.size.width < 0.8 * screenWidth) {
+            proportion = 0.99f;
+        }
+        
+        CGAffineTransform currentTransform = newAvatarImageView.transform;
+        CGAffineTransform newTransform = CGAffineTransformScale(currentTransform, proportion, proportion);
+        
+        [newAvatarImageView setTransform:newTransform];
+        
+        currentScale = [sender scale];
     }
 }
 
