@@ -77,39 +77,40 @@ static CGFloat screenHeight;
 
 + (void)actionPinchOnImage:(UIPinchGestureRecognizer *)sender {
     if ([sender state] == UIGestureRecognizerStateEnded) {
+        currentScale = 1.0f;
         if (newAvatarImageView.frame.size.width < screenWidth) {
             // avatar image too small
             [UIView animateWithDuration:0.5f
                              animations:^
             {
                 [newAvatarImageView setCenter:CGPointMake(screenWidth / 2, screenHeight / 2)];
-                CGFloat proportion = screenWidth / newAvatarImageView.bounds.size.width;
+                CGFloat proportion = screenWidth / newAvatarImageView.frame.size.width;
                 CGAffineTransform currentTransform = newAvatarImageView.transform;
                 CGAffineTransform newTransform = CGAffineTransformScale(currentTransform, proportion, proportion);
                 [newAvatarImageView setTransform:newTransform];
             }];
-        } else if (newAvatarImageView.bounds.size.width > 2 * screenWidth) {
+        } else if (newAvatarImageView.frame.size.width > 2 * screenWidth) {
             // avatar image too big
             [UIView animateWithDuration:0.5f
                              animations:^
             {
-                CGFloat proportion = 2 * screenWidth / newAvatarImageView.bounds.size.width;
+                CGFloat proportion = 2 * screenWidth / newAvatarImageView.frame.size.width;
                 CGAffineTransform currentTransform = newAvatarImageView.transform;
                 CGAffineTransform newTransform = CGAffineTransformScale(currentTransform, proportion, proportion);
                 [newAvatarImageView setTransform:newTransform];
             }];
         }
-        currentScale = 1.0f;
         return;
     } else {
         CGFloat proportion = 1.0 - (currentScale - [sender scale]);
-        
+        NSLog(@"%f : %f", newAvatarImageView.frame.size.width, [UIScreen mainScreen].bounds.size.width);
         // slow down when being too big or too small
-        if (newAvatarImageView.bounds.size.width > 2 * screenWidth) {
+        if (newAvatarImageView.frame.size.width > 2 * screenWidth) {
             proportion = 1.01f;
-        } else if (newAvatarImageView.bounds.size.width < 0.8 * screenWidth) {
+        } else if (newAvatarImageView.frame.size.width < 0.8 * screenWidth) {
             proportion = 0.99f;
         }
+        NSLog(@"proportion: %f", proportion);
         
         CGAffineTransform currentTransform = newAvatarImageView.transform;
         CGAffineTransform newTransform = CGAffineTransformScale(currentTransform, proportion, proportion);
