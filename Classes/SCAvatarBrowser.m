@@ -50,9 +50,13 @@ static CGFloat screenHeight;
     UITapGestureRecognizer *tapOnBackground = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(actionTapOnImage:)];
     [background addGestureRecognizer:tapOnBackground];
     
-    // scale up or down by pinch on background
+    // scale by pinch on background
     UIPinchGestureRecognizer *pinchOnImage = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(actionPinchOnImage:)];
     [background addGestureRecognizer:pinchOnImage];
+    
+    // move avatar by pan on image
+    UIPanGestureRecognizer *panOnImage = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(actionPanOnImage:)];
+    [newAvatarImageView addGestureRecognizer:panOnImage];
     
     // show detail view with animation
     [UIView animateWithDuration:0.3f
@@ -75,6 +79,7 @@ static CGFloat screenHeight;
     }];
 }
 
+// pinch to scale the avatar image
 + (void)actionPinchOnImage:(UIPinchGestureRecognizer *)sender {
     if ([sender state] == UIGestureRecognizerStateEnded) {
         currentScale = 1.0f;
@@ -103,14 +108,13 @@ static CGFloat screenHeight;
         return;
     } else {
         CGFloat proportion = 1.0 - (currentScale - [sender scale]);
-        NSLog(@"%f : %f", newAvatarImageView.frame.size.width, [UIScreen mainScreen].bounds.size.width);
+
         // slow down when being too big or too small
         if (newAvatarImageView.frame.size.width > 2 * screenWidth) {
             proportion = 1.01f;
         } else if (newAvatarImageView.frame.size.width < 0.8 * screenWidth) {
             proportion = 0.99f;
         }
-        NSLog(@"proportion: %f", proportion);
         
         CGAffineTransform currentTransform = newAvatarImageView.transform;
         CGAffineTransform newTransform = CGAffineTransformScale(currentTransform, proportion, proportion);
@@ -119,6 +123,13 @@ static CGFloat screenHeight;
         
         currentScale = [sender scale];
     }
+}
+
+// pan to move the avatar image
++ (void)actionPanOnImage:(UIPanGestureRecognizer *)sender {
+    NSLog(@"actionPanOnImage");
+    // todo
+    // date: 2015/09/08
 }
 
 - (void)didReceiveMemoryWarning {
