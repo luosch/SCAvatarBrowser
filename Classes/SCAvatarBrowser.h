@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SCAvatarBrowser : UIViewController
+@interface SCAvatarBrowser : UIViewController <UIActionSheetDelegate>
 
 + (void)showImageView:(UIImageView *)avatarImageView;
 

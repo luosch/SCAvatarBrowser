@@ -6,7 +6,7 @@ SCAvatarBrowser
 
 By using `SCAvatarBrowser`, you can make your avatar scalable, draggable and storable within just one line.
 
-    [SCAvatarBrowser showImage:[UIImage imageNamed:@"myAvatar.jpg"] fromView:self.view];
+    [SCAvatarBrowser showImage:self.avatar];
 
 ## Installation
 
@@ -27,8 +27,8 @@ The project uses ARC and targets iOS 7.0+.
 ## TODO
 
 - ~~Create one example~~ (added 2015/09/04)
-- Support for drag and sacle
-- Support for store image to local photo library
+- ~~Support for drag and sacle~~ (added 2015/09/08)
+- ~~Support for store image to local photo library~~ (added 2015/09/08)
 - Add CocoaPods spec
 
 ## License

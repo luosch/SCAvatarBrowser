@@ -58,6 +58,11 @@ static CGFloat screenHeight;
     UIPanGestureRecognizer *panOnImage = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(actionPanOnImage:)];
     [newAvatarImageView addGestureRecognizer:panOnImage];
     
+    // store avatar image by long press on it
+    UILongPressGestureRecognizer *longPressOnImage = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(actionLongPressOnImage:)];
+    longPressOnImage.minimumPressDuration = 0.3f;
+    [newAvatarImageView addGestureRecognizer:longPressOnImage];
+    
     // show detail view with animation
     [UIView animateWithDuration:0.3f
                      animations:^
@@ -127,14 +132,101 @@ static CGFloat screenHeight;
 
 // pan to move the avatar image
 + (void)actionPanOnImage:(UIPanGestureRecognizer *)sender {
-    NSLog(@"actionPanOnImage");
-    // todo
-    // date: 2015/09/08
+    if (newAvatarImageView.frame.size.width < screenWidth + 1) {
+        return;
+    }
+    
+    CGPoint touchPosition = [sender translationInView:newAvatarImageView];
+    CGFloat avatarWidth = newAvatarImageView.frame.size.width;
+    CGFloat avatarHeight = newAvatarImageView.frame.size.height;
+    CGFloat moveX = touchPosition.x;
+    CGFloat moveY = touchPosition.y;
+    
+    moveX *= (avatarWidth / screenWidth);
+    moveY *= (avatarHeight / screenHeight);
+    
+    
+    [sender.view setCenter:CGPointMake(sender.view.center.x + moveX, sender.view.center.y + moveY)];
+    [sender setTranslation:CGPointMake(0, 0) inView:newAvatarImageView];
+    
+    // fix avatar's postion when out of view
+    if ([sender state] == UIGestureRecognizerStateEnded) {
+        CGFloat newCenterX = screenWidth / 2;
+        CGFloat newCenterY = screenHeight / 2;
+        BOOL isCenterChanged = NO;
+        
+        // too left or too right
+        if (newAvatarImageView.frame.origin.x + avatarWidth < screenWidth) {
+            newCenterX -= (avatarWidth - screenWidth) / 2;
+            isCenterChanged = YES;
+        } else if (newAvatarImageView.frame.origin.x > 0) {
+            newCenterX += (avatarWidth - screenWidth) / 2;
+            isCenterChanged = YES;
+        } else {
+            newCenterX = newAvatarImageView.center.x;
+        }
+        
+        // too top or too bottom
+        if (avatarHeight > screenHeight) {
+            if (newAvatarImageView.frame.origin.y + avatarHeight < screenHeight) {
+                newCenterY -= (avatarHeight - screenHeight) / 2;
+                isCenterChanged = YES;
+            } else if (newAvatarImageView.frame.origin.y > 0) {
+                newCenterY += (avatarHeight - screenHeight) / 2;
+                isCenterChanged = YES;
+            } else {
+                newCenterY = newAvatarImageView.center.y;
+            }
+        }
+
+        if (isCenterChanged == YES) {
+            [UIView animateWithDuration:0.3 animations:^{
+                [newAvatarImageView setCenter:CGPointMake(newCenterX , newCenterY)];
+            }];
+        }
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+// long press to store the avatar
++ (void)actionLongPressOnImage:(UILongPressGestureRecognizer *)sender {
+    if ([sender state] == UIGestureRecognizerStateEnded) {
+        UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                      initWithTitle:nil
+                                      delegate:(id<UIActionSheetDelegate>)self                                      cancelButtonTitle:@"cancel"
+                                      destructiveButtonTitle:nil
+                                      otherButtonTitles:@"save the picture", nil];
+        
+        actionSheet.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
+        [actionSheet showInView:[sender view]];
+    }
+}
+
+// select first button to store image
++ (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        UIImageWriteToSavedPhotosAlbum(newAvatarImageView.image, self, @selector(thisImage:hasBeenSavedInPhotoAlbumWithError:usingContextInfo:), NULL);
+    }
+}
+
+// handle error and success
++ (void)thisImage:(UIImage *)image hasBeenSavedInPhotoAlbumWithError:(NSError *)error usingContextInfo:(void*)ctxInfo {
+    if (error) {
+        NSLog(@"error");
+        UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:nil
+                                                             message:@"fail to store image"
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"ok"
+                                                   otherButtonTitles:nil, nil];
+        [errorAlert show];
+    } else {
+        NSLog(@"success");
+        UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:nil
+                                                             message:@"image has benn stored"
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"ok"
+                                                   otherButtonTitles:nil, nil];
+        [errorAlert show];
+    }
 }
 
 @end
