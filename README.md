@@ -12,7 +12,7 @@ SCAvatarBrowser
 By using `SCAvatarBrowser`, you can make your avatar scalable, draggable and storable within just one line.
 
 ```objective-c
-    [SCAvatarBrowser showImage:self.avatar];
+[SCAvatarBrowser showImage:self.avatar];
 ```
 
 ## Installation
