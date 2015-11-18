@@ -34,7 +34,7 @@ The project uses ARC and targets iOS 7.0+.
 - (void)showAvatarDetailView {
     [SCAvatarBrowser showImageView:self.avatar];
 }
-```objective-c
+```
 
 ## TODO
 
