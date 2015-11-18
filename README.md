@@ -1,5 +1,9 @@
 SCAvatarBrowser
 ============
+[![Travis CI](https://travis-ci.org/luosch/SCAvatarBrowser.svg)](https://travis-ci.org/luosch/SCAvatarBrowser)
+[![Version](https://img.shields.io/cocoapods/v/SCAvatarBrowser.svg?style=flat)](http://cocoadocs.org/docsets/SCAvatarBrowser/)
+[![License](https://img.shields.io/cocoapods/l/SCAvatarBrowser.svg?style=flat)](https://github.com/luosch/SCAvatarBrowser/blob/master/LICENSE)
+
 ## Overview
 
 `SCAvatarBrowser` is a slight and powerful tool to recreate the view used to enlarge photos from their avatar previews.
@@ -9,8 +13,11 @@ By using `SCAvatarBrowser`, you can make your avatar scalable, draggable and sto
     [SCAvatarBrowser showImage:self.avatar];
 
 ## Installation
+Using Pod
 
-To use `SCAvatarBrowser` in your own project, just import `SCAvatarBrowser.h` and `SCAvatarBrowser.m` files into your project, and then include "`SCAvatarBrowser.h`" where needed, or in your precompiled header.
+    pod 'SCAvatarBrowser', '~> 1.1'
+
+Or drag `SCAvatarBrowser.h` and `SCAvatarBrowser.m` files into your project, and then include "`SCAvatarBrowser.h`" where needed, or in your precompiled header.
 
 The project uses ARC and targets iOS 7.0+.
 
