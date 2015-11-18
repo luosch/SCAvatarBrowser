@@ -15,6 +15,7 @@ By using `SCAvatarBrowser`, you can make your avatar scalable, draggable and sto
 [SCAvatarBrowser showImage:self.avatar];
 ```
 
+
 ## Installation
 Using Pod
 
