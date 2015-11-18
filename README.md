@@ -2,6 +2,7 @@ SCAvatarBrowser
 ============
 [![Travis CI](https://travis-ci.org/luosch/SCAvatarBrowser.svg)](https://travis-ci.org/luosch/SCAvatarBrowser)
 [![Version](https://img.shields.io/cocoapods/v/SCAvatarBrowser.svg?style=flat)](http://cocoadocs.org/docsets/SCAvatarBrowser/)
+[![Pod Platform](http://img.shields.io/cocoapods/p/SCAvatarBrowser.svg?style=flat)](http://cocoadocs.org/docsets/SCAvatarBrowser/)
 [![License](https://img.shields.io/cocoapods/l/SCAvatarBrowser.svg?style=flat)](https://github.com/luosch/SCAvatarBrowser/blob/master/LICENSE)
 
 ## Overview
@@ -10,7 +11,9 @@ SCAvatarBrowser
 
 By using `SCAvatarBrowser`, you can make your avatar scalable, draggable and storable within just one line.
 
+```objective-c
     [SCAvatarBrowser showImage:self.avatar];
+```
 
 ## Installation
 Using Pod
@@ -23,13 +26,15 @@ The project uses ARC and targets iOS 7.0+.
 
 ## Usage Examples
 
-	#import "SCAvatarBrowser.h"
-	...
-	...
-	...
-	- (void)showAvatarDetailView {
-	    [SCAvatarBrowser showImageView:self.avatar];
-	}
+```objective-c
+#import "SCAvatarBrowser.h"
+...
+...
+...
+- (void)showAvatarDetailView {
+    [SCAvatarBrowser showImageView:self.avatar];
+}
+```objective-c
 
 ## TODO
 
