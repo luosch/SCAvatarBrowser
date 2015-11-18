@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode7
+xcode_scheme: SCAvatarBrowserDemo
+xcode_project: SCAvatarBrowserDemo.xcodeproj
+xcode_sdk:
+    - iphonesimulator9.0
+script:
+    - xctool -project SCAvatarBrowserDemo/SCAvatarBrowserDemo.xcodeproj -scheme SCAvatarBrowserDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
