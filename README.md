@@ -45,4 +45,4 @@ The project uses ARC and targets iOS 7.0+.
 
 ## License
 
-This code is distributed under the terms and conditions of the MIT license.
+All source code is licensed under the [MIT License](https://raw.githubusercontent.com/luosch/SCAvatarBrowser/master/LICENSE).
