@@ -5,6 +5,10 @@
 [![Pod Platform](http://img.shields.io/cocoapods/p/SCAvatarBrowser.svg?style=flat)](http://cocoadocs.org/docsets/SCAvatarBrowser/)
 [![License](https://img.shields.io/cocoapods/l/SCAvatarBrowser.svg?style=flat)](https://github.com/luosch/SCAvatarBrowser/blob/master/LICENSE)
 
+## Screenshots
+
+![](https://raw.githubusercontent.com/luosch/SCAvatarBrowser/master/Screenshots/demo.gif)
+
 ## Overview
 
 `SCAvatarBrowser` is a powerful and lightweight tool to create the view used to enlarge photos from their avatar previews.
